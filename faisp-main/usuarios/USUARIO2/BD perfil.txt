@@ -1,0 +1,1 @@
+CREATE TABLE faculdade.perfil_de_usuario(id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,email VARCHAR(255),cpf VARCHAR(14),telefone VARCHAR(14),forma_de_pagamento ENUM("cartão","boleto","pix"),data_de_pagamento DATETIME);
