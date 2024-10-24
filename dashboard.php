@@ -1,10 +1,9 @@
 <?php
 
 session_start();
-if(!isset($_SESSION['userId']) || $_SESSION['userId'] == ''){
-    header('Location:usuarios/login.php?msg=Você não está autenticado');
-
-}
+    if(!isset($_SESSION['userId']) || $_SESSION['userId'] == ''){
+        header('Location:usuarios/login.php?msg=Você não está autenticado');
+    }
 ?>
 
 
