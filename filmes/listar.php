@@ -1,11 +1,11 @@
 <?php
-require "../conexao.php";
+    require "../conexao.php";
 
-$sql = "SELECT * FROM `filmes` where deleted_by is null";
+    $sql = "SELECT * FROM `filmes` where deleted_by is null";
 
-$resultado = $conn->query($sql);
+    $resultado = $conn->query($sql);
 
-$conn->close();
+    $conn -> close();
 
 ?>
 

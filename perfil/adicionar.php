@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuarios </title>
+    <title>Criando novo perfil de usuário</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,7 +81,7 @@
     <?php require "../menu.php"; ?>
 
     <div class="main-content">
-        <h1>Adicionar Perfil de usuário</h1>
+        <h1>Adicionar novo perfil de usuário</h1>
 
         <form action="acoes/adicionarPerfil.php" method="GET">
             <div class="form-group">
@@ -183,6 +183,6 @@
             </div>
         </form>
     </div>
-    
+
 </body>
 </html>
