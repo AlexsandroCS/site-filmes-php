@@ -5,7 +5,7 @@
 
     $usuario = $_SESSION['userId'];
     
-    $sql = "SELECT * FROM perfil_de_usuario WHERE idUsuario = $usuario";
+    $sql = "SELECT * FROM perfilUsuario WHERE idUsuario = $usuario";
     $resultado = $conn->query($sql);
 ?>
 

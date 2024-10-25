@@ -204,7 +204,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `status`, `palavraDeSeguranca`, `ultimoLogin`, `criado_em`) VALUES
 (1, 'Matheus Rubens', 'matheus.rubens@bol.com.br', '123456', 'ativo', '1 ao 6', '2024-09-24 19:18:59', '2024-09-09 19:27:41'),
-(2, 'dsadasd', 'dsadas@dasda.com', '1231231', 'ativo', '12321321', NULL, '2024-09-09 19:46:41');
+(2, 'Alexsandro Soares', 'alex@gmail.com', '123', 'ativo', '123456', NULL, '2024-09-09 19:46:41');
 
 --
 -- Índices para tabelas despejadas
@@ -278,3 +278,17 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+--
+-- Estrutura da tabela de `perfilUsuario` 
+--
+CREATE TABLE `perfilUsuario` (
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `nome` varchar(150) NOT NULL,
+  `generoFavorito` enum('acao','comedia','drama','fantasia','guerra','historia','romance','scifi','suspense','terror') DEFAULT NULL,
+  `idiomaAudio` enum('original','portuguesBrasil','portuguesPortugal','ingles','espanhol','chines','russo','japones','finlandes','alemao') DEFAULT NULL,
+  `idiomaLegenda` enum('original','portuguesBrasil','portuguesPortugal','ingles','espanhol','chines','russo','japones','finlandes','alemao') DEFAULT NULL,
+  `classificacaoEtaria` enum('livre','10','12','14','16','18') DEFAULT NULL,
+  `idUsuario` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

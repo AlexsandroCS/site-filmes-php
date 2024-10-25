@@ -11,7 +11,7 @@
     $classificacaoEtaria = $_GET['classificacaoEtaria'];
     $createdBy = $_SESSION['userId'];
     
-    $sql = "INSERT INTO perfil_de_usuario (nome, generoFavorito, idiomaAudio, idiomaLegenda, classificacaoEtaria, idUsuario) VALUES('$nome', '$generoFavorito', '$idiomaAudio', '$idiomaLegenda', '$classificacaoEtaria', $createdBy)";
+    $sql = "INSERT INTO perfilUsuario (nome, generoFavorito, idiomaAudio, idiomaLegenda, classificacaoEtaria, idUsuario) VALUES('$nome', '$generoFavorito', '$idiomaAudio', '$idiomaLegenda', '$classificacaoEtaria', $createdBy)";
     
     
     if ($conn->query($sql) === TRUE) {
